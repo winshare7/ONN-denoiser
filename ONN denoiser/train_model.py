@@ -124,7 +124,7 @@ def denoiser_loss(outputs,labels):
     return l
 optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate, eps=1e-4)
 
-# Training loop
+# Training 
 for epoch in range(epochs):
     # Training phase
     model.train()
@@ -158,7 +158,7 @@ for epoch in range(epochs):
 
     avg_val_loss = val_running_loss / len(validation_loader)
     print(f"Epoch [{epoch+1}/{epochs}], Training Loss: {avg_train_loss:.4f}, \nValidation Loss: {avg_val_loss:.4f}")
-# Test the model
+
 model.eval()
 with torch.no_grad():
     correct = 0
