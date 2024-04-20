@@ -1,4 +1,9 @@
+
+
 # 项目介绍
+    作者：汤文轩
+    单位：清华大学精仪系
+    邮箱：tangwx21@mails.tsinghua.edu.cn
     本项目是论文“All-optical image denoising using a diffractive visual processor”的复现，时间有限，仅大致实现了网络的基本结构和功能。
     论文链接：https://doi.org/10.1038/s41377-024-01385-6
     使用MINST手写数字数据集，添加椒盐噪声。预处理后的数据结构应为：112*112*60000；包含60000个112*112的灰度图。
