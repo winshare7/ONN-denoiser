@@ -102,10 +102,10 @@ test_data = torch.from_numpy(test_data).double()
 test_label_mod = torch.from_numpy(test_label_mod).double()
 
 # Transpose the data
-train_data_transposed = train_data.permute(2, 0, 1)  # Now shape [1000, 250, 250]
-train_label_transposed = train_label_mod.permute(2, 0, 1)  # Now shape [1000, 10]
-test_data_transposed = test_data.permute(2, 0, 1)  # Now shape [1000, 250, 250]
-test_label_transposed = test_label_mod.permute(2, 0, 1)  # Now shape [1000, 10]
+train_data_transposed = train_data.permute(2, 0, 1)  
+train_label_transposed = train_label_mod.permute(2, 0, 1)  
+test_data_transposed = test_data.permute(2, 0, 1)  
+test_label_transposed = test_label_mod.permute(2, 0, 1)  
 
 # Create the TensorDataset
 train_data_transposed = train_data_transposed.to(device)
